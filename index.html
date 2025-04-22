@@ -1,0 +1,266 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+ <body> 
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header" style="--i:1" class="nav-link"><b>Home</b></a></li>
+                <li><a href="#about" style="--i:2" class="nav-link"><b>About</b></a></li>
+                <li><a href="#skills" style="--i:3" class="nav-link"><b>Skills</b></a></li>
+                <li><a href="#services" style="--i:4" class="nav-link"><b>Certificates</b></a></li>
+                <li><a href="#project" style="--i:5" class="nav-link"><b>Projects</b></a></li>
+                <li><a href="#contact" style="--i:6" class="nav-link"><b>Contact</b></a></li>
+                <i class='bx bx-x-circle' style="color: rgb(252, 252, 252);" onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' style='color:#36c8d3' onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+        <p><i><span class="para1" style="color: #1babbe;"></span></i></p><br>
+        <h1>Hello, I am <span>Ketha Jagadhish</h1></span><br>
+        <h2>from Andhra Pradesh<br><br>And I'm a <span class="text"></span></h2><br>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/user.png" id="profile-img">
+                <a href="https://drive.google.com/file/d/1L4YwGDctCMPAs6YhiPiV_Jne2FVLLXPn/view?usp=sharing"  target="_blank" class="resume"><i class='bx bxs-show'></i> View Resume</a>
+                <a href="images/Resume.pdf" Download class="btn btn2">Download Resume</a>
+                <!-- <a href="mailto:kethajagadhish123@gmail.com" class="connect" title="Connect"><i class='bx bxs-message-rounded-dots'></i></i>  Connect</a> -->
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p><span class="para"></span></p>
+                <div class="tab-titles">
+          
+                    <p class="tab-links" onclick="opentab('education')" style="--i:7">🎓<b>Education</b></p>
+                    <p class="tab-links" onclick="opentab('certifications')" style="--i:8">📜<b>Languages</b></p>
+                    <p class="tab-links" onclick="opentab('internship')" style="--i:9">💼<b>Internship</b></p>
+                    <p class="tab-links" onclick="opentab('achievement')" style="--i:10">🏆<b>Achievements</b></p>
+                </div> 
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><b>• Graduation [B.Tech(Bachelor of Technology) in Computer Science and Engineering(CSE)]</b> </span><br>Graduating in 2026<br>Lovely Professional University (LPU), Punjab, India<br>CGPA- 6.85</li>
+                        <li><span><b>• Intermediate(12<sup>th</sup>) [The Board of Intermediate Education, Andhra Pradesh (BIEAP)]</b></span><br>2020 - 2024<br>Sasi Junior College, Andhra Pradesh, India<br>Percentage - 98% </a></li>
+                        <li><span><b>• 10<sup>th</sup> Class [The Board of Secondary Education, Andhra Pradesh]</b></span><br>2019 - 2020<br>Sasi High School, Andhra Pradesh<br>Percentage - 94%</a></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span><b>• Telugu</b></span><br>Native or bilingual proficiency</li>
+                        <li><span><b>• English</b></span><br>Full professional proficiency</li>
+                        <li><span><b>• Hindi</b></span><br>Professional working proficiency</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship" style="line-height: 1.5;">
+                    <ul>
+                        <li><span><b>• Machine Learning Intern</b></span><br>Academor - (Remote)<br>September 2024 - October 2024<br><a href="https://drive.google.com/file/d/1hN4V8k74Xm-tTfhCFwY5-GuADZx3iHks/view?usp=sharing" target="_blank" style="color: #47c2ff;">Internship Certificate</a><br><a href="https://drive.google.com/file/d/1m_EPsG4erpQUiQ72QS-rj3-LV5HlVsam/view?usp=drive_link" target="_blank" style="color: #47c2ff;"> Letter of Recommendation(LOR)</a><br><b><a style="color: #47c2ff;">• Acquired skills:</a></b> Python Programming, Python Libraries, Machine Learning, Object-Oriented Programming (OOPS)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievement" style="line-height: 1.3;">
+                    <ul>
+                        <li><span><b>• Research Paper Publication</b></span><br><br>• Published a <a href="https://drive.google.com/file/d/1KIFpzW9djmeeKpqyRo9RCcJehvucKZng/view?usp=sharing" target="_blank" style="color: #f7f7f7;">research paper</a> on Natural Language Processing titled "Integrating Probabilities Models and Neural Networks for Enhanced Part-of-Speech Tagging and Spellchecking" as a main author in Grenze International Journal of Engineering and Technology <a href="https://thegrenze.com/index.php?display=page&view=journalabstract&absid=3983&id=8" target="_blank" style="color: #f7f7f7;">(GIJET)</a>.
+                        <br><br>• <a href="https://drive.google.com/file/d/14cMAfvLSIAf1GHmW5XAH6MpeB_Bu53B4/view?usp=sharing" target="_blank" style="color: #f7f7f7;">Research paper</a> on “ Image Classification using Convolutional Neural Networks (CNN) : A Deep Learning Approach for Multi-Class Classification ” accepted and published in the Hinweis International Conference on Image Processing, Conference Proceedings, indexed by Scopus and Crossref.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<div id="skills">
+    <h1 class="title">My Skills</h1>
+    <section class="skills-container">
+        <!-- Technical Skills -->
+        <div class="skills-category">
+            <h2 class="skills-heading">Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-box c-plus-plus" style="--i:11"><i class='bx bxl-c-plus-plus'></i> C++</div>
+                <div class="skill-box java" style="--i:12"><i class='bx bxl-java'></i> Java</div>
+                <div class="skill-box python" style="--i:13"><i class='bx bxl-python'></i> Python</div>
+                <div class="skill-box html" style="--i:14"><i class='bx bxl-html5'></i> HTML</div>
+                <div class="skill-box css" style="--i:15"><i class='bx bxl-css3'></i> CSS</div>
+                <div class="skill-box javascript" style="--i:16"><i class='bx bxl-javascript'></i> JavaScript</div>
+                <div class="skill-box git" style="--i:17"><i class='bx bxl-git'></i> Git</div>
+                <div class="skill-box github" style="--i:18"><i class='bx bxl-github'></i> GitHub</div>
+                <div class="skill-box ml" style="--i:19"><i class='bx bx-brain'></i> Machine Learning</div>
+                <div class="skill-box nlp" style="--i:20"><i class='bx bx-chat'></i> NLP</div>
+                <div class="skill-box dl" style="--i:21"><i class='bx bx-chip'></i> Deep Learning</div>
+                <div class="skill-box cv" style="--i:22"><i class='bx bx-image'></i> Computer Vision</div>
+                <div class="skill-box dsa" style="--i:23"><i class='bx bx-code-alt'></i> Data Structures & Algorithms</div>
+                <div class="skill-box sql" style="--i:24"><i class='bx bx-data'></i> SQL Database</div>
+                <div class="skill-box docker" style="--i:25"><i class='bx bxl-docker'></i> DevOps Tools</div>
+            </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skills-category">
+            <h2 class="skills-heading">Soft Skills</h2>
+            <div class="skills-list"> 
+                <div class="skill-box communication" style="--i:26">Communication</div>
+                <div class="skill-box thinking" style="--i:27">Creative Thinking</div>
+                <div class="skill-box problem-solving" style="--i:28">Problem Solving</div>
+                <div class="skill-box teamwork" style="--i:29">Team Work</div>
+                <div class="skill-box leadership" style="--i:30">Leadership</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<!-----------Certifications------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs118/Course/NPTEL24CS118S157020134104431349.pdf" target="_blank" style="color: #ffffff;"> <h2>Cloud Computing</h2></a>
+                <p>NPTEL [October 2024]</p>
+                <!-- <a href="https://github.com/praveenkumar949/POS-Tagging-and-Spellchecking-with-Hybrid-Model_nlp"></a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-hexagon-nodes"></i>
+                <a href="https://media.geeksforgeeks.org/courses/certificates/ddb54d9fea3f28d09a07989c60633e4a.pdf" target="_blank" style="color: #ffffff;"> <h2>Complete Interview Preparation - Self-Paced (C++)</h2></a>
+                <p>GeeksforGeeks [July 2024]</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <a href="https://drive.google.com/file/d/1Sum3eRkuxwv0iawIZOUoynStqSFD6aWR/view?usp=sharing" target="_blank" style="color: #ffffff;"> <h2>Dynamic Programming, Greedy Algorithms</h2></a>
+                <p>Coursera [May 2024]</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <a href="https://drive.google.com/file/d/1ZSoaJY46IczFGh34KdqohZ4d6eOtwKjQ/view?usp=sharing" target="_blank" style="color: #ffffff;"> <h2>Generative AI with Large Language Models</h2></a>
+                <p>Coursera [March 2024]</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <a href="https://drive.google.com/file/d/13oh9CFXA6cxNZ4qleUuMeAIo-hKcYdxZ/view?usp=sharing" target="_blank" style="color: #ffffff;"> <h2>Machine Learning</h2></a>
+                <p>Coursera [February 2024]</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <a href="https://drive.google.com/file/d/1zFjOEuV1mS_gOtW5tdSIU0ESALZB4GAX/view?usp=sharing" target="_blank" style="color: #ffffff;"> <h2>Prompt Engineering for ChatGPT</h2></a>
+                <p>LinkedIn  [February 2023]</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Projects-->
+
+<section>
+    <div id="portf" id="project">
+        <div class="main-text" id="project">
+            <h1 class="title1">My Projects</h1>
+            <div class="portf-content">
+                <div class="row" style="--i:1">
+                    <img src="/images/pos-tagging.png">
+                    <div class="layer">
+                        <h5>Natural Language Processing (NLP)</h5>
+                        <h6>September 2024 – November 2024</h6>
+                        <p>Integrating Probabilities Models and Neural Networks for Enhanced Part-of-Speech Tagging and Spellchecking</p>
+                        <a href="https://github.com/Jagadhish3/POS-Tagging-and-Spell-Checking"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+                <div class="row" style="--i:2">
+                    <img src="/images/image.jpeg">
+                    <div class="layer">
+                        <h5>Machine Learning</h5>
+                        <h6>November 2024 – December 2024</h6>
+                        <p>Image Classification using Convolutional Neural Networks (CNN) </p>
+                        <a href="https://github.com/Jagadhish3/Image_classification_using_cnn"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+                <div class="row"style="--i:3">
+                    <img src="/images/customer.jpeg">
+                    <div class="layer">
+                        <h5>Machine Learning</h5>
+                        <h6>September 2024 - October 2024</h6>
+                        <p>Customer Segmentation</p>
+                        <a href="https://github.com/Jagadhish3/Acadomor-Internship-online-"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+                <div class="row" style="--i:4">
+                    <img src="/images/movie.jpeg">
+                    <div class="layer">
+                        <h5>Machine Learning</h5>
+                        <p>Movie Recommendation system</p>
+                        <a href="https://github.com/Jagadhish3/Movie-Recommendation-System"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title1">Contact Me</h1> 
+                <p>
+                    <a href="mailto:kethajagadhish123@gmail.com" style="color:#ffffff; text-decoration:none;" onclick="return confirm('Do you want to send an email to kethajagadhish123@gmail.com?');"  title="Send Mail">
+                      <i class='bx bxl-gmail' style='color:#2bd8e8'></i> kethajagadhish123@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <a href="tel:+917569494509" style="color:#ffffff; text-decoration:none;" onclick="return confirm('Do you want to call +91 7569494509?');" title="Make Call">
+                      <i class='bx bxs-phone' style='color:#2bd8e8'></i> +91 7569494509
+                    </a>
+                  </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jagadhishketha/" class="linkedin" style="--i:1" ><i class='bx bxl-linkedin-square' title="LinkeIn"></i></a>
+                    <a href="https://github.com/Jagadhish3" class="github" style="--i:2"><i class='bx bxl-github' title="GitHub"></i></a>
+                    <a href="https://leetcode.com/u/jagadhish3/" class="leetcode" style="--i:3"><i class='bx bx-code-alt' title="LeetCode"></i></a>
+                    <a href="https://www.instagram.com/jaga_dhish3/?hl=en" class="instagram" style="--i:4"><i class='bx bxl-instagram' title="Instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1BYTqRuVds/" class="facebook" style="--i:5"><i class='bx bxl-facebook-circle' title="Facebook"></i></a>
+                    <a href="https://x.com/Jagadhish_ketha" class="twitter" style="--i:6"><i class='bx bxl-twitter' title="Twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn-box btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Jagadhish. Portofolio website</p>
+    </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
